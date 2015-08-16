@@ -63,7 +63,7 @@ public class MainActivity extends AppCompatActivity {
         try {
             SmsManager smsManager = SmsManager.getDefault();
             smsManager.sendTextMessage(phoneNo, null, message, null, null);
-            Toast.makeText(getApplicationContext(), "Thanks for registering.Confirmation SMS has been sent.", Toast.LENGTH_LONG).show();
+            Toast.makeText(getApplicationContext(),"Thanks for registering.Confirmation SMS has been sent.", Toast.LENGTH_LONG).show();
         }
 
         catch (Exception e) {
